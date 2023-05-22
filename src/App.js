@@ -9,7 +9,7 @@ function App() {
   );
 }
 
-function SearchBox () {
+function SearchBox() {
   const [searchInput, setSearchInput] = useState('');
 
   const handleSearchInputChange = (event) => {
@@ -21,9 +21,11 @@ function SearchBox () {
       <input
       type="text"
       value={searchInput}
-      onChange={}
+      onChange={handleSearchInputChange}
+      placeholder="What crazy gif are you looking for?"
+      />
     </div>
-  )
+  );
 }
 
 export default App;
